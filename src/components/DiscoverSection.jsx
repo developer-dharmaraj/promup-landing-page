@@ -54,7 +54,7 @@ const DiscoverSection = () => {
                                 </div>
 
                                 <div className="md:border-l md:border-gray-200 md:pl-6">
-                                    <button className="w-full group md:w-auto px-4 py-2 text-sm inline-flex items-center justify-center gap-2 border  border-gray-300 hover:bg-emerald-700 hover:text-white transition " aria-label={`View details of ${item.title}`}>
+                                    <button className="w-full group md:w-auto px-4 py-2 text-sm inline-flex items-center justify-center gap-2 border cursor-pointer  border-gray-300 hover:bg-emerald-700 hover:text-white transition " aria-label={`View details of ${item.title}`}>
                                         View Details
                                         <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                                     </button>
