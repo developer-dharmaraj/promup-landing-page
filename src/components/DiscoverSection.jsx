@@ -1,56 +1,71 @@
-import { MapPin, ArrowRight } from "lucide-react"
+import { MapPin, ArrowRight } from "lucide-react";
 import { discoverData } from "../config/discoverData";
 
 const DiscoverSection = () => {
     return (
-        <section className="bg-[#eaf7f1] py-14">
+        <section className="bg-[#eaf7f1] py-12 md:py-16">
             <div className="max-w-7xl mx-auto px-6 md:px-14">
-                <div className="flex justify-between items-start mb-12">
+                <header className="grid gap-6 md:grid-cols-[1fr_auto] mb-10">
                     <div className="max-w-xl">
-                        <h2 className="text-4xl md:text-5xl font-medium">{discoverData.heading}</h2>
-                        <p className="text-gray-600 mt-3">{discoverData.description}</p>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium leading-tight">
+                            {discoverData.heading}
+                        </h2>
+                        <p className="text-gray-600 mt-3 text-sm sm:text-base">
+                            {discoverData.description}
+                        </p>
                     </div>
-                    <button className="group text-sm font-medium flex items-center gap-1 cursor-pointer">
-                        {discoverData.cta}
-                        <span className="transition-transform duration-300 group-hover:translate-x-1">
-                            <ArrowRight size={16} />
-                        </span>
-                    </button>
-                </div>
 
-                <div className="flex flex-col divide-y divide-emerald-100">
+                    <button className="group inline-flex items-center gap-1 text-sm font-medium self-start"
+                        aria-label="Explore properties">
+                        {discoverData.cta}
+                        <ArrowRight
+                            size={16}
+                            className="transition-transform group-hover:translate-x-1"
+                        />
+                    </button>
+                </header>
+
+                <ul className="divide-y divide-emerald-100">
                     {discoverData.properties.map((item) => (
-                        <div key={item.id} className="flex justify-between items-center gap-6 py-5 md:p-5 hover:bg-white transition">
-                            <div className="flex items-center gap-6 flex-1 min-w-0">
-                                <img src={item.image} alt={item.title} className="w-35 h-22 object-cover" />
-                                
+                        <li key={item.id} className="py-5 md:px-5 transition hover:bg-white">
+                            <div className="grid gap-4 md:grid-cols-[auto_1fr_auto_auto] md:items-center">
+                                <img src={item.image}
+                                    alt={item.title} className="w-full h-52 sm:h-40 md:w-32 md:h-20 object-cover"
+                                />
+
                                 <div className="min-w-0">
-                                    <h3 className="font-medium text-[15px] truncate">{item.title}</h3>
-                                    <p className="flex items-center gap-1 text-sm text-gray-500 mt-1">
+                                    <h3 className="font-medium text-sm sm:text-[15px] truncate">{item.title} </h3>
+                                    <p className="flex items-center gap-1 text-xs sm:text-sm text-gray-500 mt-1">
                                         <MapPin size={14} />
                                         {item.location}
                                     </p>
+
+                                    <p className="mt-2 text-sm text-gray-600 md:hidden">
+                                        <span className="font-medium text-black">Price:</span>{" "}
+                                        {item.price} · {item.type}
+                                    </p>
+                                </div>
+
+                                <div className="hidden md:block text-sm text-gray-600 w-[220px]">
+                                    <p> <span className="font-medium text-black">Price:</span>{" "}
+                                        {item.price}
+                                    </p>
+                                    <p className="mt-1">Property Type: {item.type}</p>
+                                </div>
+
+                                <div className="md:border-l md:border-gray-200 md:pl-6">
+                                    <button className="w-full group md:w-auto px-4 py-2 text-sm inline-flex items-center justify-center gap-2 border border-gray-300 hover:bg-emerald-700 hover:text-white transition " aria-label={`View details of ${item.title}`}>
+                                        View Details
+                                        <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                                    </button>
                                 </div>
                             </div>
-                            <div className="hidden md:block w-[220px] text-sm text-gray-600">
-                                <p><span className="font-medium text-black">Price:</span>{" "}{item.price}</p>
-                                <p className="mt-1">Property Type: {item.type}</p>
-                            </div>
-                            <div className="hidden md:block h-10 w-px bg-gray-300" />
-                            <div className="w-[13vw] flex justify-end">
-                                <button className="px-4 py-2 text-sm flex cursor-pointer group items-center gap-2 border border-gray-300 hover:bg-emerald-700 hover:text-white transition">
-                                    View Details
-                                    <span className="transition-transform duration-300 group-hover:translate-x-1">
-                                        <ArrowRight size={16} />
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
+                        </li>
                     ))}
-                </div>
+                </ul>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default DiscoverSection;
