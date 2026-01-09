@@ -9,7 +9,7 @@ const GatewaySection = () => {
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 h-full flex items-center justify-center px-4">
             <div className="text-center max-w-4xl text-white">
-              <h1 className="text-4xl md:text-5xl font-medium">
+              <h1 className="text-3xl md:text-5xl font-medium">
                 Discover the World, One Adventure at a Time
               </h1>
               <p className="mt-4 text-sm text-white/90 max-w-3xl mx-auto">

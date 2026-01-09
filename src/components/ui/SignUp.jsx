@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const signupFields = [
     { type: "tel", placeholder: "Enter phone number", name: "phone" },
@@ -40,13 +41,13 @@ const SignUp = () => {
 
             {open && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md">
-                    <div className="relative w-full h-[95vh] max-w-lg bg-white shadow-[0_40px_120px_rgba(0,0,0,0.25)] p-8">
+                    <div className="relative w-full h-full max-w-lg bg-white shadow-[0_40px_120px_rgba(0,0,0,0.25)] p-8">
                         <button onClick={() => setOpen(false)}
                             className="absolute top-5 right-5 text-gray-400 hover:text-black transition">
                             <X size={20} />
                         </button>
 
-                        <div className="mb-6">
+                        <div className="my-6">
                             <h2 className="text-3xl font-semibold tracking-tight text-neutral-900">
                                 Welcome to PromUP
                             </h2>
@@ -90,7 +91,7 @@ const SignUp = () => {
                         <p className="text-xs text-neutral-500 mt-6 text-center">
                             Already have an account?{" "}
                             <span className="text-neutral-900 font-medium cursor-pointer hover:underline">
-                                Log in
+                                <Link to='/login'>Log In</Link>
                             </span>
                         </p>
                     </div>
