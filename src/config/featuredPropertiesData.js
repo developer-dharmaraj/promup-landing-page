@@ -22,8 +22,7 @@ export const featuredProperties = [
     {
         id: 3,
         tag: "For Sale",
-        image:
-            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+        image:"Exterior Design.jpg",
         title: "The Tuscan Villa",
         price: "$25,000,000",
         type: "Historic Villa",

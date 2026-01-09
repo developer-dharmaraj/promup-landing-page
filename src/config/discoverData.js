@@ -21,8 +21,7 @@ export const discoverData = {
             location: "Miami Beach, USA",
             price: "$2,500,000",
             type: "Villa",
-            image:
-                "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+            image: "Exterior Design.jpg",
             highlight: true,
         },
         {
@@ -31,8 +30,7 @@ export const discoverData = {
             location: "Aspen, USA",
             price: "$1,200,000",
             type: "Cabin",
-            image:
-                "https://images.unsplash.com/photo-1572120360610-d971b9d7767c",
+            image:"https://images.unsplash.com/photo-1572120360610-d971b9d7767c",
             highlight: false,
         },
         {

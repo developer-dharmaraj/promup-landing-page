@@ -40,10 +40,13 @@ const FeaturedProperties = () => {
             <div ref={sliderRef}
                 className="mt-12 flex gap-4 overflow-x-auto scroll-smooth scrollbar-hide touch-pan-x" >
                 {featuredProperties.map((item) => (
-                    <div key={item.id} className="min-w-[240px] md:min-w-[340px] flex-shrink-0">
-                        <div className="relative">
-                            <img src={item.image} alt={item.title} className="h-[240px] w-full object-cover" />
-                            <span className="absolute top-3 left-3 bg-white text-xs px-3 py-1">
+                    <div key={item.id} className="min-w-full md:min-w-[340px] flex-shrink-0">
+                        <div className="relative h-[240px] w-full overflow-hidden bg-gray-200">
+                            <img src={item.image} alt={item.title}
+                                className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+                                loading="lazy"
+                            />
+                            <span className="absolute top-3 left-3 bg-white text-xs px-3 py-1 rounded">
                                 {item.tag}
                             </span>
                         </div>
@@ -53,7 +56,7 @@ const FeaturedProperties = () => {
                                 <h3 className="text-[16px] font-medium">{item.title}</h3>
                                 <div className="flex items-center text-[13px] ">
                                     <p className="font-medium text-gray-700">{item.price}</p>
-                                    <Dot size={30} className="text-gray-700"/>
+                                    <Dot size={30} className="text-gray-700" />
                                     <span className="text-gray-500">{item.type}</span>
                                 </div>
                             </div>
