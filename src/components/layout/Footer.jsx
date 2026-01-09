@@ -7,13 +7,9 @@ const Footer = () => {
     return (
         <footer className="bg-black text-white mt-20">
             <div className="max-w-7xl mx-auto px-6 md:px-14 py-14">
-
                 <div className=" flex justify-between gap-12 flex-col md:flex-row">
-
-                    {/* Subscribe */}
                     <div>
                         <BrandLogo />
-
                         <div className="mt-8">
                             <h3 className="text-lg font-medium">Subscribe</h3>
                             <p className="text-sm text-gray-400 mt-2">

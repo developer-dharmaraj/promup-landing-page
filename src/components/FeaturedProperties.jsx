@@ -46,7 +46,7 @@ const FeaturedProperties = () => {
                                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                                 loading="lazy"
                             />
-                            <span className="absolute top-3 left-3 bg-white text-xs px-3 py-1 rounded">
+                            <span className="absolute top-3 left-3 bg-white text-xs px-3 py-1">
                                 {item.tag}
                             </span>
                         </div>
