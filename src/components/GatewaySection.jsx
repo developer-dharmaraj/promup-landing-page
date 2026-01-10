@@ -16,9 +16,9 @@ const GatewaySection = () => {
                 Travel Beyond Limits. Explore Without Boundaries.
                 See the World. Live the Journey.
               </p>
-              <button className="mt-8 inline-flex items-center gap-2 bg-white text-black px-7 py-3 rounded-full text-sm font-medium hover:bg-gray-100 transition">
+              <button className="mt-8 group inline-flex items-center gap-2 bg-white text-black px-7 py-3 cursor-pointer rounded-full text-sm font-medium hover:bg-gray-100 transition">
                 Get Started
-                <ArrowRight size={16} />
+                <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
               </button>
             </div>
           </div>

@@ -5,7 +5,7 @@ import { footerData } from "../../config/footerData";
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white mt-20">
+        <footer className="bg-gray-800 text-white mt-15">
             <div className="max-w-7xl mx-auto px-6 md:px-14 py-14">
                 <div className=" flex justify-between gap-12 flex-col md:flex-row">
                     <div>

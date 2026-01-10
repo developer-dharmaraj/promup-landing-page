@@ -1,6 +1,6 @@
+import AuthModal from "../../auth/AuthModal";
 import BrandLogo from "../ui/BrandLogo";
 import MenuItems from "../ui/MenuItems";
-import SignUp from "../ui/SignUp";
 
 const Navbar = () => {
     return (
@@ -9,7 +9,7 @@ const Navbar = () => {
                 <div><BrandLogo /></div>
                 <div><MenuItems /></div>
                 <div className="flex gap-8 items-center">
-                    <SignUp/>
+                    <AuthModal />
                 </div>
             </nav>
         </header>

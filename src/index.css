@@ -4,6 +4,40 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-.scrollbar-hide{
+.scrollbar-hide {
     scrollbar-width: none;
+}
+
+.auth-input {
+    @apply w-full px-4 py-2.5 bg-neutral-50 border border-neutral-200 focus:border-emerald-700 outline-none text-sm;
+}
+
+.auth-primary-btn {
+    @apply w-full bg-emerald-700 text-white py-2.5 hover:bg-emerald-900 transition;
+}
+
+.auth-social-btn {
+    @apply w-full py-2.5 border border-neutral-200 text-sm hover:bg-neutral-100 transition;
+}
+
+.auth-divider {
+    @apply my-6 text-xs text-neutral-400 text-center relative;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #e5e5e5;
+}
+
+.auth-divider::before {
+    left: 0;
+}
+
+.auth-divider::after {
+    right: 0;
 }
