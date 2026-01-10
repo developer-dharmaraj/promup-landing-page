@@ -30,7 +30,7 @@ const DiscoverSection = () => {
                         <li key={item.id} className="py-5 md:px-5 transition md:hover:bg-white">
                             <div className="grid gap-4 md:grid-cols-[auto_1fr_auto_auto] md:items-center">
                                 <img src={item.image}
-                                    alt={item.title} className="w-full h-52 md:w-38 md:h-25 object-cover"
+                                    alt={item.title} className="w-full h-52 md:w-43 md:h-28 object-cover rounded-lg"
                                 />
 
                                 <div className="min-w-0">

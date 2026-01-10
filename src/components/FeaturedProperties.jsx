@@ -41,7 +41,7 @@ const FeaturedProperties = () => {
                 className="mt-12 flex gap-4 overflow-x-auto scroll-smooth scrollbar-hide touch-pan-x" >
                 {featuredProperties.map((item) => (
                     <div key={item.id} className="min-w-full md:min-w-[340px] flex-shrink-0">
-                        <div className="relative h-[240px] w-full overflow-hidden bg-gray-200">
+                        <div className="relative h-[240px] w-full overflow-hidden bg-gray-200 rounded-lg">
                             <img src={item.image} alt={item.title}
                                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                                 loading="lazy"

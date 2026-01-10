@@ -23,21 +23,3 @@ body {
 .auth-divider {
     @apply my-6 text-xs text-neutral-400 text-center relative;
 }
-
-.auth-divider::before,
-.auth-divider::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 40%;
-    height: 1px;
-    background: #e5e5e5;
-}
-
-.auth-divider::before {
-    left: 0;
-}
-
-.auth-divider::after {
-    right: 0;
-}
