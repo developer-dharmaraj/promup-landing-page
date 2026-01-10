@@ -11,7 +11,7 @@ const HeroSection = () => {
                     backgroundPosition: "center",
                 }}>
                 <div className="absolute inset-0 bg-black/50" />
-                <div className="relative flex items-center justify-between z-10 max-w-7xl mx-auto px-6 md:px-15 mt-45 md:mt-55 pb-5 text-white">
+                <div className="relative flex items-center justify-between z-10 max-w-7xl mx-auto px-6 md:px-15 mt-45 md:mt-55 pb-7 text-white">
                     <div>
                         <div className="flex gap-3 mb-6">
                             {Object.values(HeroData.cate).map((item, i) => (
