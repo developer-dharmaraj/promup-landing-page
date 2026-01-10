@@ -18,7 +18,7 @@ const AuthModal = () => {
 
             {open && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md">
-                    <div className="relative w-full h-full max-w-lg bg-white p-8 shadow-2xl">
+                    <div className="relative w-full max-w-lg bg-white p-8 shadow-2xl">
                         <button onClick={() => setOpen(false)}
                             className="absolute top-4 right-4 text-gray-400 hover:text-black">
                             <X />
