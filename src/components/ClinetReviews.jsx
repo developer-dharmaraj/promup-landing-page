@@ -20,7 +20,7 @@ const StudentReviews = () => {
     };
 
     return (
-        <section className="max-w-7xl mx-auto py-14 px-6 md:px-15 mt-15">
+        <section className="max-w-7xl mx-auto px-6 md:px-15 mt-15">
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
                 <h2 className="text-4xl md:text-5xl font-medium text-neutral-900">
                     Our Client love us!
