@@ -49,12 +49,12 @@ const StudentReviews = () => {
 
                 <div className="hidden lg:flex items-center gap-2">
                     <button onClick={scrollLeft}
-                        className="p-2 rounded-full border hover:bg-neutral-100">
+                        className="p-2 rounded-full border border-gray-300 hover:bg-neutral-100">
                         <ChevronLeft size={18} />
                     </button>
 
                     <button onClick={scrollRight}
-                        className="p-2 rounded-full border hover:bg-neutral-100">
+                        className="p-2 rounded-full border border-gray-300 hover:bg-neutral-100">
                         <ChevronRight size={18} />
                     </button>
                 </div>
