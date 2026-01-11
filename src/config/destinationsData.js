@@ -24,5 +24,47 @@ export const destinations = {
         { city: "Sheffield", image: "/cities/sheffield.jpg" },
         { city: "Manchester", image: "/cities/manchester.jpg" },
         { city: "Leicester", image: "/cities/leicester.jpg" },
+    ],
+
+    ie: [
+        { city: "London", image: "/Londan.jpg" },
+        { city: "Nottingham", image: "/cities/nottingham.jpg" },
+        { city: "Newcastle Upon Tyne", image: "/cities/newcastle.jpg" },
+        { city: "Sheffield", image: "/cities/sheffield.jpg" },
+        { city: "Manchester", image: "/cities/manchester.jpg" },
+        { city: "Leicester", image: "/cities/leicester.jpg" },
+    ],
+    fr: [
+        { city: "London", image: "/Londan.jpg" },
+        { city: "Nottingham", image: "/cities/nottingham.jpg" },
+        { city: "Newcastle Upon Tyne", image: "/cities/newcastle.jpg" },
+        { city: "Sheffield", image: "/cities/sheffield.jpg" },
+        { city: "Manchester", image: "/cities/manchester.jpg" },
+        { city: "Leicester", image: "/cities/leicester.jpg" },
+    ],
+    ca: [
+        { city: "London", image: "/Londan.jpg" },
+        { city: "Nottingham", image: "/cities/nottingham.jpg" },
+        { city: "Newcastle Upon Tyne", image: "/cities/newcastle.jpg" },
+        { city: "Sheffield", image: "/cities/sheffield.jpg" },
+        { city: "Manchester", image: "/cities/manchester.jpg" },
+        { city: "Leicester", image: "/cities/leicester.jpg" },
+    ],
+    de: [
+        { city: "London", image: "/Londan.jpg" },
+        { city: "Nottingham", image: "/cities/nottingham.jpg" },
+        { city: "Newcastle Upon Tyne", image: "/cities/newcastle.jpg" },
+        { city: "Sheffield", image: "/cities/sheffield.jpg" },
+        { city: "Manchester", image: "/cities/manchester.jpg" },
+        { city: "Leicester", image: "/cities/leicester.jpg" },
+    ],
+    nz: [
+        { city: "London", image: "/Londan.jpg" },
+        { city: "Nottingham", image: "/cities/nottingham.jpg" },
+        { city: "Newcastle Upon Tyne", image: "/cities/newcastle.jpg" },
+        { city: "Sheffield", image: "/cities/sheffield.jpg" },
+        { city: "Manchester", image: "/cities/manchester.jpg" },
+        { city: "Leicester", image: "/cities/leicester.jpg" },
     ]
+
 };

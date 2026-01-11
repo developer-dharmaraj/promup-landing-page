@@ -6,7 +6,7 @@ const PopularDestinations = () => {
 
     return (
         <section className="max-w-7xl mx-auto px-6 md:px-15 mt-15">
-            <h2 className="text-4xl sm:text-5xl font-semibold text-neutral-900">
+            <h2 className="text-4xl sm:text-5xl font-medium">
                 Popular Destinations
             </h2>
 
@@ -15,9 +15,9 @@ const PopularDestinations = () => {
                     <button
                         key={country.id}
                         onClick={() => setActiveCountry(country.id)}
-                        className={`flex items-center gap-2 px-4 py-2 rounded-xl border text-sm font-medium whitespace-nowrap transition ${activeCountry === country.id
-                                ? "bg-white shadow-md border-neutral-200"
-                                : "bg-neutral-50 hover:bg-white border-neutral-200"
+                        className={`flex items-center gap-2 px-4 py-2 rounded-lg border text-sm font-medium whitespace-nowrap transition ${activeCountry === country.id
+                            ? "bg-white shadow-md border-neutral-200"
+                            : "bg-neutral-50 hover:bg-white border-neutral-200"
                             }`}>
                         <span className="text-lg">{country.flag}</span>
                         {country.name}
