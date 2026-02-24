@@ -12,7 +12,7 @@ const HomePage = () => {
             <AboutSection />
             <FeaturedProperties />
             <DiscoverSection />
-            <StudentReviews />
+            {/* <StudentReviews /> */}
             <FAQSection />
         </div>
     )
